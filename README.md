@@ -12,6 +12,10 @@ This example get the follow data:
 - Game name
 - Game image
 - Game grade
+- Game genres
+- Game release
+- Game Plataforms
 - Game screenshots
 - Game summary
+
 
