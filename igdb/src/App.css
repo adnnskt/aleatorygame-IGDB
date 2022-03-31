@@ -1,0 +1,291 @@
+.load-page{
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  background-color: rgba(0, 0, 0, 0.945);
+  visibility: hidden;
+}
+
+.pulse {
+  animation: pulse 2s infinite ease-in-out alternate;
+}
+@keyframes pulse {
+  from { transform: scale(0.9); }
+  to { transform: scale(1); }
+}
+
+.fade-out {
+  animation: fade-out 1s linear;
+}
+@keyframes fade-out {
+  from { opacity: 1; }
+  to { opacity: 0; }
+}
+
+.fade-in {
+  animation: fade-in 1.5s ease-in;
+}
+@keyframes fade-in {
+  from { opacity: 0; }
+  to { opacity: 1; }
+}
+
+.gif{
+  margin-left: 30%;
+  margin-top: 10%;
+  display: flex;
+  width: 40%;
+  height: 50%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  background:url('./pacman.gif');
+  background-position: center;
+  background-size: contain;
+  border: 1px solid rgba(255, 255, 240, 0.767) ;
+  visibility: hidden;
+}
+
+body{
+  background-color: #883B8E
+}
+
+a {
+  color: #883B8E;
+  text-decoration: none;
+}
+
+.title{
+  position: absolute;
+  margin-top: -3px;
+  width: 100%;
+  text-align: center;
+  font-family: 'Gochi Hand', cursive;
+  font-size: 50px;
+  color: #883B8E;
+  text-shadow: 1px 1px 3px #E4DFE4;
+}
+
+
+.joystick{
+  background-image: url("./directions.png");
+  position: absolute;
+  margin-top: 20px;
+  margin-left: 1050px;
+  height: 170px;
+  width: 170px;
+  background-size: contain;
+  background-color: #FCB429;
+  border-radius: 50%;
+  font-family: 'Gochi Hand', cursive;
+  font-size: 20px;
+  color:#883B8E;
+  cursor: pointer;
+  visibility: visibles;
+}
+
+.App{
+
+  background-image: url("./shape.svg");
+  height: 370px;  
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  /*position: relative;*/
+}
+
+.text-box{
+
+  background-image: url("./summaryBox.svg");
+  background-repeat: no-repeat;
+  background-position: top;
+  height: 430px;
+  width: 700px;
+  /*height: 470px;*/
+  margin-left: 45%;
+  margin-top: -230px;
+  position: absolute;
+  visibility: hidden;
+
+}
+
+.summary{
+  height: 80px;
+  width: 200px;
+  text-align: center;
+  margin-top: 150px;
+  margin-left: 250px;  
+  color: #d1cdd1;
+}
+
+.text-area {
+  position: absolute;
+  left: 25%;
+  top: 43%;
+  width: 328px;
+  height: 191px;
+  box-sizing: border-box;
+  border-radius: 10px;
+  background: none;
+  color: #E4DFE4;
+  text-align: center;
+
+}
+
+h1 {
+  font-size: 40px;
+  position: absolute;
+  font-family: Alef;
+  margin-top: 80px;
+  margin-left: 350px;
+  color: #d1cdd1;
+  text-shadow: 1px 1px 3px #883B8E;
+  visibility: visible;
+}
+
+img {
+  margin-top: 80px;
+  margin-left: 30px;
+  /*border:  1mm ridge #d1cdd1;*/
+  
+}
+
+img:hover {
+  box-shadow: 5px 5px #FCB429;
+}
+
+.elipse {
+  display: flex;
+  position: absolute;
+  box-shadow: 3px 3px ;
+  width: 110px;
+  height: 100px;
+  background-color: #883B8E;
+  border-radius: 50%;
+  border-color: #FCB429;
+  margin-top: 240px;
+  margin-left: 320px;
+  text-align:center;
+  visibility: hidden;
+  
+}
+
+.genres{
+  position: absolute;
+  margin-top: 130px;
+  margin-left: 320px;
+  color: #d1cdd1;
+  display: flex;
+  flex-direction: column;
+  visibility: hidden;
+}
+
+.elipse > p {
+  text-align: center;
+  color: #FCB429;
+  margin-top: 15px;
+  margin-left: 30px;
+  font-size: 45px;
+  font-family: cursive;
+
+}
+
+.screen-shots{
+  display: flex;
+  width: 47%;
+  height: 100px;
+  align-content: center;
+  margin-top: 100px;
+  margin-left: -10px;
+  color: #d1cdd1
+
+}
+
+.ss-img{
+  margin-left: 10px;
+}
+
+.text-screenshots{
+  position: absolute;
+  margin-top: 75px;
+  margin-left: 30px;
+  color: #d1cdd1;
+  visibility: hidden;
+}
+
+.ss-img > img{
+  max-width:200px;
+  max-height:150px;
+  width: auto;
+  height: auto;
+  margin-top: 0px;
+}
+
+
+/*  
+.App {
+
+position: absolute;
+width: 1440px;
+height: 574.66px;
+left: 0px;
+top: 0px;
+
+background: #6C72A6;
+border: 2px solid #FCB429;
+box-sizing: border-box;
+box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+
+}
+*/
+
+
+
+
+
+
+
+
+/*
+
+.App {
+  text-align: center;
+}
+
+.App-logo {
+  height: 40vmin;
+  pointer-events: none;
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  .App-logo {
+    animation: App-logo-spin infinite 20s linear;
+  }
+}
+
+.App-header {
+  background-color: #282c34;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(10px + 2vmin);
+  color: white;
+}
+
+.App-link {
+  color: #61dafb;
+}
+
+@keyframes App-logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+*/
